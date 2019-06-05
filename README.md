@@ -1,3 +1,9 @@
+#Atualização
+
+Esse projeto faz parte do nanodegree React da Udacity. Nele são buscados uma série de livros e os mesmos são divididos em
+estantes. Na aplicação é possível fazer busca por livros em estoque, assim como alterar a estante em que cada um se encontra.
+Foram definidas 03 (três) estantes: Currently Reading (Lendo), Want to read (quero ler) e Read (lido).
+
 # MyReads Project
 
 This is the starter template for the final assessment project for Udacity's React Fundamentals course. The goal of this template is to save you time by providing a static example of the CSS and HTML markup that may be used, but without any of the React code that is needed to complete the project. If you choose to start with this template, your job will be to add interactivity to the app by refactoring the static code in this template.
