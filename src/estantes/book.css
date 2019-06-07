@@ -46,7 +46,7 @@
   align-items: flex-end;
 }
 
-.book-shelf-changer {
+ .book-shelf-changer {
   /*position: absolute;*/
   right: 0;
   bottom: -10px;
@@ -59,7 +59,7 @@
   background-position: center;
   background-size: 20px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
+} 
 
 .book-shelf-changer select {
   width: 100%;

@@ -24,6 +24,7 @@ class Book extends Component {
         <div className="book">
             <div className={`book-avatar ${!book.imageLinks ? 'no-image' : ''}`} style={{backgroundImage: book.imageLinks ? `url(${book.imageLinks.thumbnail})` : ''}}></div>
             <div className="book-shelf-changer">
+              
               <select defaultValue={this.getShelfFlag(book.shelf)} onChange={this.shelfChanger(book)}>
                 <option value="none" disabled>Move to...</option>
                 <option value="currentlyReading">Currently Reading</option>
@@ -31,7 +32,7 @@ class Book extends Component {
                 <option value="read">Read</option>
                 <option value="none">None</option>
               </select>
-            </div>
+            </div><span>{this.getShelfFlag(book.shelf)}</span>
             <div className="book-title">{book.title}</div>
             <div className="book-authors">{book.author}</div>
         </div>

@@ -15,8 +15,9 @@ class Busca extends Component {
 
   onSearch = (event) => {
     let value = event.target.value.trim()
+    let limpaTudo = value.match(/[^\w]/)
 
-    if(value){
+    if(value && !limpaTudo){
       this.getAllBooks(value)
     }else{ 
       this.setState({ allBooks: [] })
