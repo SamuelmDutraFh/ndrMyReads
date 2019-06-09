@@ -8,25 +8,24 @@ import './busca.css';
 class Busca extends Component {
 
   state = {
+    query: '',
     allBooks: [],
     loading: false,
     isEmpty: false
   }
 
   onSearch = (event) => {
-    let value = event.target.value.trim()
-    let limpaTudo = value.match(/[^\w]/)
+    let value = event.target.value
 
-    if(value && !limpaTudo){
-      this.getAllBooks(value)
-    }else{ 
+    if(value === '' || value === undefined) {
       this.setState({ allBooks: [] })
+    }else{
+      this.getAllBooks(value)
     }
   }
 
   getAllBooks = (query) => {
     this.setState({ loading: true })
-
     BooksAPI.search(query, 20).then((books) => {
       if(!books.error) {
         let allBooks = books.map(book => {
